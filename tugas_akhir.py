@@ -4,7 +4,8 @@ def menu():
 	print("2. Upah Karyawan")
 	print("3. Biodata")
 	print("4. Menghitung Saldo")
-	print("5. Keluar Dari Program")
+	print("5. Calender")
+	print("6. Keluar Dari Program")
 	print("--------------------------------------------------------\n")
 	pilih = int(input("Masukkan pilihan : "))
 	return pilih
@@ -83,14 +84,22 @@ def menghitung_saldo():
 		 print("Karena tabungan anda diatas 1.000.000, bunga yang anda dapatkan adalah 4%")
 		 print("")
 		 print("Maka setelah menabung selama " + str (lama) + " bulan, saldo anda adalah " +str (saldoAkhir)) 
+		 
+def calender():
+	import calendar  
+	 
+	yy = int(input("Masukan Tahun: "))  
+	mm = int(input("Masukan Bulan: "))  
+	  
+	print(calendar.month(yy,mm))  
 		
-	print("\n")
-	print("--------------------------------------------------------")           
-	print("<<<<<<<<<<<< Selamat Datang Di Program Kami >>>>>>>>>>>>")
-	print("--------------------------------------------------------")
+print("\n")
+print("--------------------------------------------------------")           
+print("<<<<<<<<<<<< Selamat Datang Di Program Kami >>>>>>>>>>>>")
+print("--------------------------------------------------------")
 
 pilih = True
-while(pilih<5):
+while(pilih<6):
 	pilih = menu()
 	if(pilih==1):
 		perkalian()
@@ -100,6 +109,8 @@ while(pilih<5):
 		biodata()
 	elif(pilih==4):
 		menghitung_saldo()
+	elif(pilih==5):
+		calender()
 	else:
 		print("")
 		print("--------------------------------------------------------")           
