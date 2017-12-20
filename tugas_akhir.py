@@ -19,7 +19,7 @@ def perkalian():
 	print("--------------------------------------------------------")
 	print("Tabel perkalian")
 	for i in range(1,11):  
-		print(num,"x5",i,"=",num*i)
+		print(num,"x",i,"=",num*i)
 	print("--------------------------------------------------------\n")
 	print("\n")
 
