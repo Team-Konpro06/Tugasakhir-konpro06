@@ -18,7 +18,7 @@ def perkalian():
 	num = int(input("Masukkan angka perkalian: ")) 
 	print("--------------------------------------------------------")
 	print("Tabel perkalian")
-	for i in range(1,11):  
+	for i in range(2,11):  
 		print(num,"x",i,"=",num*i)
 	print("--------------------------------------------------------\n")
 	print("\n")
